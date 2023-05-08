@@ -215,50 +215,48 @@ var possibleInput = {
     // "hlep" : this.help(),
     "help": function () {
         responseText("You can type a command in the chatbox")
-        responseText("Something like &quot;Navvy, please show me Mees&rsquo; best work&quot;")
-        responseText("Did you find a bug or problem? Tweet me @MeesRttn")
+        responseText("Something like &quot;Boty, please show me Kishan&rsquo; best work&quot;")
+        responseText("Did you find a bug or problem? Drop a mail Please")
         commandReset(0);
         return
     },
     "best work": function () {
-        responseText("I will show you Mees' best work!");
-        responseText("These are his <a href='#animation'>best animations</a>")
-        responseText("These are his <a href='#projects'>best projects</a>")
+        responseText("I will show you some best work!");
+        responseText("These are his <a href='https://www.linkedin.com/pulse/easy-website-hosting-firebase-kishan-patel'>Webhosting Article on linkedln</a>")
+        responseText("These are his <a href='http://github.com/kishxnpatel'>Github projects</a>")
         responseText("Would you like to see how I was built? (Yes/No)")
         commandReset(1);
         return
     },
     "about": function () {
-        responseText("This is me, Navvy's maker, Mees Rutten");
-        responseText("I'm a 22 year old Communication and Multimedia Design student");
+        responseText("This is me, Kishan Patel ");
+        responseText("I'm a 21 year old Computer Science student");
         responseText("My ambition is to become a great Creative Front-End Developer");
-        responseText("Would you like to know about Mees' vision? (Yes/No)");
+        responseText("Would you like to know about my vision? (Yes/No)");
         commandReset(2);
         return
     },
     "experience": function () {
-        responseText("Mees has previously worked at:");
-        responseText("Cobra Systems as web- developer / designer");
-        responseText("BIT Students as web- developer / designer");
-        responseText("MediaMonks as a junior Front-end Developer");
-        commandReset(3);
+        responseText("previously worked at:");
+        responseText("OnePrismtech as a junior Front-end Developer");
+        commandReset(1);
         return
     },
     "hobbies": function () {
         responseText("Kishan loves:");
         responseText("Coding complicated chatbots");
-        responseText("Family time");
-        responseText("Going out with friends");
-        responseText("Working out");
+        responseText("Football ⚽");
+        responseText("E-Sports");
+        responseText("Working out 👾");
         commandReset(4);
         return
     },
     "interests": function () {
-        responseText("Mees loves:");
+          responseText("Kishan loves:");
         responseText("Coding complicated chatbots");
-        responseText("Family time");
-        responseText("Going out with friends");
-        responseText("Working out");
+        responseText("Football ⚽");
+        responseText("E-Sports");
+        responseText("Working out 👾");
         commandReset(5);
         return
     },
@@ -278,22 +276,22 @@ var possibleInput = {
         return
     },
     "commands": function () {
-        responseText("This is a list of commands Navvy knows:")
-        responseText("help, best work, about, vision, experience, hobbies / interests, contact, rick roll");
+        responseText("This is a list of commands Boty knows:")
+        responseText("help, best work, about, vision, experience, hobbies / interests, contact");
         commandReset(8);
         return
     },
-    "rick roll": function () {
-        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-    },
+   // "Social": function () {
+     //   window.location.href = "https://instagram.com/kishxnpatel"
+    //},
     // work experience
 }
 
 var reactionInput = {
     "best work": function () {
         //Redirects you to a different page after 3 secs
-        responseText("On this GitHub page you'll find everything about Navvy");
-        responseText("<a href='https://github.com/meesrutten/chatbot'>Navvy on GitHub</a>")
+        responseText("On this GitHub page you'll find everything about Boty");
+        responseText("<a href='https://github.com/kishxnpatel/chatbot'>Boty on GitHub</a>")
         animationCounter = 1;
         return
     },
