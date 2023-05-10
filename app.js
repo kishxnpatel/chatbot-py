@@ -12,7 +12,7 @@ var sendForm = document.querySelector('#chatform'),
     input,
     previousInput,
     isReaction = false,
-    unkwnCommReaction = "I didn't quite get that.",
+    unkwnCommReaction = "I didn't get that ⁉",
     chatbotButton = document.querySelector(".submit-button")
 
 sendForm.onkeydown = function (e) {
@@ -220,12 +220,21 @@ var possibleInput = {
         commandReset(0);
         return
     },
+    "hi": function () {
+        responseText("👋 Hii there, How can i help you ? ");
+        commandReset(0);
+        return
+    },
+    "bye": function () {
+        responseText("Bye !, See you later ❤");
+        commandReset(0);
+    },
     "best work": function () {
         responseText("I will show you some best work!");
         responseText("These are his <a href='https://www.linkedin.com/pulse/easy-website-hosting-firebase-kishan-patel'>Webhosting Article on linkedln</a>")
         responseText("These are his <a href='http://github.com/kishxnpatel'>Github projects</a>")
         responseText("Would you like to see how I was built? (Yes/No)")
-        commandReset(1);
+        commandReset(2);
         return
     },
     "about": function () {
@@ -252,7 +261,7 @@ var possibleInput = {
         return
     },
     "interests": function () {
-          responseText("Kishan loves:");
+        responseText("Kishan loves:");
         responseText("Coding complicated chatbots");
         responseText("Football ⚽");
         responseText("E-Sports");
@@ -281,8 +290,8 @@ var possibleInput = {
         commandReset(8);
         return
     },
-   // "Social": function () {
-     //   window.location.href = "https://instagram.com/kishxnpatel"
+    // "Social": function () {
+    //   window.location.href = "https://instagram.com/kishxnpatel"
     //},
     // work experience
 }
