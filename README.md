@@ -1,9 +1,5 @@
 # Simple chatbot implementation with PyTorch.
 
-- The implementation is easy to follow for beginners and provides a basic understanding of chatbots.
-- The implementation is straightforward with a Feed Forward Neural net with 2 hidden layers.
-- Customization for your own use case is super easy. Just modify `intents.json` with possible patterns and responses and re-run the training (see below for more info).
-
 ### Clone repo and create a virtual environment:
 ```
 $ git clone https://github.com/kishxnpatel/chatbot-deployment.git
